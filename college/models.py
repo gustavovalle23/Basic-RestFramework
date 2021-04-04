@@ -16,7 +16,6 @@ class Course(models.Model):
         ('I', 'Intermediary'),
         ('A', 'Advanced')
     )
-    id_2 = models.IntegerField()
     id_course = models.CharField(max_length=10)
     description = models.CharField(max_length=100)
     level = models.CharField(max_length=1,

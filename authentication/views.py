@@ -1,8 +1,14 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from rest_framework import permissions
+from rest_framework_simplejwt.views import TokenObtainPairView
 
-from authentication.serializers import GroupSerializer, UserSerializer
+
+from authentication.serializers import GroupSerializer, TokenSerializer, UserSerializer
+
+
+class TokenView(TokenObtainPairView):
+    serializer_class = TokenSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):

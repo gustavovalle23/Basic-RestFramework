@@ -3,8 +3,8 @@
 
 ### Use Cases
 - [x] User Login (JWT)
-- [ ] User Register
+- [x] User Register
 - [ ] User Update
 - [x] User Detail
 - [ ] User Delete/Inactivate
-- [ ] User authorization
+- [x] User authorization

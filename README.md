@@ -2,7 +2,7 @@
 ## Basic API Example with Django Rest Framework 
 
 ### Use Cases
-- [ ] User Login
+- [x] User Login (JWT)
 - [ ] User Register
 - [ ] User Update
 - [x] User Detail

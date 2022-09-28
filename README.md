@@ -5,6 +5,6 @@
 - [ ] User Login
 - [ ] User Register
 - [ ] User Update
-- [ ] User Detail
+- [x] User Detail
 - [ ] User Delete/Inactivate
 - [ ] User authorization

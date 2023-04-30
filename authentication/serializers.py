@@ -7,18 +7,18 @@ from rest_framework_simplejwt.tokens import RefreshToken
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
-        fields = ['url', 'username', 'email', 'groups']
+        fields = ["url", "username", "email", "groups"]
 
 
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Group
-        fields = ['url', 'name']
+        fields = ["url", "name"]
 
 
 class TokenSerializer(TokenObtainPairSerializer):
     @classmethod
     def get_token(cls, user: User) -> RefreshToken:
         token: RefreshToken = super().get_token(user)
-        token['username'] = user.username
+        token["username"] = user.username
         return token

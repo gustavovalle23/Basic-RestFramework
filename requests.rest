@@ -1,12 +1,19 @@
 @baseUrl = http://localhost:8000
 @username = admin
 @password = admin
-@access_token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyODIzMjA2LCJpYXQiOjE2ODI4MTk2MDYsImp0aSI6ImI1NTFlYjU3MjgwMDQzOTRiNWI4YzA4OTRhNjUyOGRiIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJhZG1pbiJ9._MA4aq5yaVUrbk3cm3S6DBjZy6k_AHopSy_7nXxnKy0
+@access_token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyODgwMDMyLCJpYXQiOjE2ODI4NzY0MzIsImp0aSI6IjdjZDM2NmNjYjk1MDRhZGNiZGVhOTI5NDk0NjQyODExIiwidXNlcl9pZCI6NCwidXNlcm5hbWUiOiJzZWVkMyJ9.jaGuuN9rj2VL8GzfqF3oVbrYPVZa_NFHW0V-SZRcNzw
 
 ###
 GET {{baseUrl}}/users/?page=1
 Content-Type: application/json
 Authorization: Bearer {{access_token}}
+
+
+###
+DELETE {{baseUrl}}/users/2/
+Content-Type: application/json
+Authorization: Bearer {{access_token}}
+
 
 ###
 GET {{baseUrl}}/users/1
@@ -19,6 +26,6 @@ POST {{baseUrl}}/authenticate
 Content-Type: application/json
 
 {
-  "username": "{{username}}",
-  "password": "{{password}}"
+  "username": "seed3",
+  "password": "seed"
 }

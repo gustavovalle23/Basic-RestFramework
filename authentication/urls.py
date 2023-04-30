@@ -4,9 +4,9 @@ from rest_framework import routers
 from authentication import views
 
 router = routers.DefaultRouter()
-router.register('users', views.UserViewSet)
-router.register('groups', views.GroupViewSet)
+router.register("users", views.UserViewSet)
+router.register("groups", views.GroupViewSet)
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path("", include(router.urls)),
 ]

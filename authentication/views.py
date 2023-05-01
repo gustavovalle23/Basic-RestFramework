@@ -1,8 +1,9 @@
-from django.contrib.auth.models import User, Group
+from django.contrib.auth.models import Group
 from rest_framework import viewsets, permissions
 from rest_framework_simplejwt.views import TokenObtainPairView
 
 from authentication.serializers import GroupSerializer, TokenSerializer, UserSerializer
+from accounts.models import User
 
 
 class TokenView(TokenObtainPairView):

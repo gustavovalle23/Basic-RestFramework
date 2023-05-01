@@ -1,6 +1,7 @@
-from django.contrib.auth.models import User
 from django.http.response import JsonResponse
 from django.contrib.auth.hashers import make_password
+
+from accounts.models import User
 
 admin_password = make_password("admin")
 seed_password = make_password("seed")

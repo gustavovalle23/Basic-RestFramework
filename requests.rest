@@ -1,7 +1,7 @@
 @baseUrl = http://localhost:8000
 @username = admin
 @password = admin
-@access_token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyODgwMDMyLCJpYXQiOjE2ODI4NzY0MzIsImp0aSI6IjdjZDM2NmNjYjk1MDRhZGNiZGVhOTI5NDk0NjQyODExIiwidXNlcl9pZCI6NCwidXNlcm5hbWUiOiJzZWVkMyJ9.jaGuuN9rj2VL8GzfqF3oVbrYPVZa_NFHW0V-SZRcNzw
+@access_token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyOTYxMTQ3LCJpYXQiOjE2ODI5NTc1NDcsImp0aSI6IjNiOWIyYjI3ODljOTQ0Mjc5NjA2MTUxMmE3Y2RlZjkzIiwidXNlcl9pZCI6NzksInVzZXJuYW1lIjoic2VlZDMifQ.o8KaL2zD-Rt-ozV3lJm8Ddyvz3MA32QfcBMp9OYtjds
 
 ###
 GET {{baseUrl}}/users/?page=1
@@ -26,6 +26,6 @@ POST {{baseUrl}}/authenticate
 Content-Type: application/json
 
 {
-  "username": "seed3",
-  "password": "seed"
+  "email": "admin@email.com",
+  "password": "admin"
 }

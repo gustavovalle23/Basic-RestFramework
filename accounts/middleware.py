@@ -1,4 +1,5 @@
 import newrelic.agent
+import newrelic.console
 
 
 class TenantMiddleware:
@@ -8,7 +9,6 @@ class TenantMiddleware:
     def __call__(self, request):
         tenant = "646186b8e9cd687e613c9014"
         newrelic.agent.add_custom_attribute("tenant", tenant)
-        newrelic.agent.add_custom_parameter("tenant", tenant)
 
         response = self.get_response(request)
         return response

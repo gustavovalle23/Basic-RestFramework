@@ -1,7 +1,7 @@
 @baseUrl = http://localhost:8000
 @username = admin
 @password = admin
-@access_token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgyOTYxMTQ3LCJpYXQiOjE2ODI5NTc1NDcsImp0aSI6IjNiOWIyYjI3ODljOTQ0Mjc5NjA2MTUxMmE3Y2RlZjkzIiwidXNlcl9pZCI6NzksInVzZXJuYW1lIjoic2VlZDMifQ.o8KaL2zD-Rt-ozV3lJm8Ddyvz3MA32QfcBMp9OYtjds
+@access_token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg0MjA5NTA1LCJpYXQiOjE2ODQyMDU5MDUsImp0aSI6Ijg2MmYzNmE2YzkyMjRjMGNhYWExYjE0NDFkOGM5MGViIiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJhZG1pbiJ9.rUWGfBZ6IGUD7XBZ9OCaJZLllMx91oFm4p6BtceWjAs
 
 ###
 GET {{baseUrl}}/users/?page=1

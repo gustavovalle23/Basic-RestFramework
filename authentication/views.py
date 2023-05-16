@@ -4,6 +4,9 @@ from rest_framework_simplejwt.views import TokenObtainPairView
 
 from authentication.serializers import GroupSerializer, TokenSerializer, UserSerializer
 from accounts.models import User
+import logging
+
+logger = logging.getLogger("django")
 
 
 class TokenView(TokenObtainPairView):
@@ -33,6 +36,11 @@ class UserViewSet(viewsets.ModelViewSet):
                 self.request.method, [permissions.IsAdminUser]
             )
         ]
+
+    def retrieve(self, request, *args, **kwargs):
+        logger.info('This is a log message', extra={'custom_key': 'custom_value'})
+
+        return super().retrieve(request, *args, **kwargs)
 
 
 class GroupViewSet(viewsets.ModelViewSet):
